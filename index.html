@@ -2,13 +2,71 @@
 <html>
 <head>
     <title>HTML code</title>
+
+    <style>
+      #header, #footer {
+        background-color: #2DDA9D;
+        color: aliceblue;
+        font-size: 1.9em;
+        text-align: center;
+        height: 15vh;
+      }
+
+      #main {
+    min-height: 70vh;
+    display: flex;
+}
+ 
+article {
+    flex: 4;
+}
+ 
+aside {
+    flex: 2;
+    background-color: grey;
+}
+ 
+img {
+    max-width: 100%;
+}
+ 
+nav {
+    flex: 1;
+    background-color: black;
+    color: white;
+}
+ 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ 
+nav a {
+    color: white;
+    text-decoration: none;
+}
+ 
+nav a:hover {
+    color: red;
+    text-decoration: underline;
+}
+      .red {
+        color:red;
+      }
+
+    </style>
+
+
+
+
     </head>
 <body>
 
   <header id="header"> Header for the website </header>
   <div id="main">
 
-    <nav>
+    <nav class="red">
       <ul>
         <li> <a href="index.html"> Home </a> </li>
         <li> <a href="about.html"> About </a> </li>
@@ -16,9 +74,11 @@
       </ul>
     </nav>
 
-    <article> This is where the main content will go <img src="https://via.placeholder.com/300x100/09f/fff" alt="dummy image">
-            <br> <a href="index.html" title="Go to index page">Link to Content</a> </article>
-        <aside> Place ad here. </aside>
+    <br>
+
+    <article> This is where the main content will go <img src="https://via.placeholder.com/300x100/09f/fff" alt="dummy image"> <br>
+            <br> <a href="index.html" title="Go to index page">Link to Content</a> </article> <br>
+        <aside class="red"> Place ad here. </aside> <br>
     </div>
     <footer id="footer"> Footer of the website </footer>
 </body>
